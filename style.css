@@ -1,0 +1,516 @@
+/*------ RESET ------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*------ VARIAVEIS ------*/
+:root {
+  --base-color: #0a0809;
+  --base-color-yellow: hsl(58, 65%, 53%);
+  --base-color-purple: hsl(288, 65%, 57%);
+  --button-hover: hsl(58, 95%, 68%);
+  --text-color: #9a9898;
+  --titulo-color: rgb(255, 255, 255);
+  --dark-base-color: #0e0e0e;
+}
+
+/*----- FONTES -----*/
+h2 {
+  color: var(--titulo-color);
+  font: 700 1.875rem 'Poppins', sans-serif;
+}
+
+p {
+  color: var(--text-color);
+  font: 400 1rem 'Poppins', sans-serif;
+}
+
+a {
+  font: 400 1.1rem 'DM Sans', sans-serif;
+  text-decoration: none;
+}
+
+.divider-1 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    var(--base-color-purple) 0%,
+    var(--base-color) 100%
+  );
+}
+
+.divider-2 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    var(--base-color) 0%,
+    var(--base-color-purple) 100%
+  );
+}
+
+/*------ BACKGROUND ------*/
+#background {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  height: 32.5rem;
+  width: 37.75rem;
+  position: relative;
+  background-position-x: 35%;
+  background-position-y: 25%;
+  mix-blend-mode: normal;
+  backdrop-filter: blur(0.4rem);
+}
+
+body {
+  background-color: var(--base-color);
+}
+
+section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+/*---- HEADER ----*/
+#header {
+  background-color: var(--base-color);
+  height: 4.5rem;
+  display: flex;
+  align-items: center;
+  border-bottom: solid #464646 1px;
+  padding-right: 1rem;
+  padding-top: 0.4rem;
+}
+
+#header .container {
+  margin-left: 1rem;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header img {
+  height: 3.5rem;
+  width: 10rem;
+  top: 2rem;
+}
+
+.container-text {
+  width: 100%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/*----  TEXTO ----*/
+#home .container-text {
+  margin: 0;
+}
+
+.espaço {
+  padding-top: 18rem;
+}
+
+#home .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+
+#home .text h2 {
+  margin-bottom: 0.5rem;
+}
+
+#home .text p {
+  margin-bottom: 2.5rem;
+  line-height: 1.6rem;
+}
+
+/*----- LINE UP -----*/
+#line-up {
+  overflow: hidden;
+}
+
+.line-up {
+  font: 700 1.875rem 'Poppins', sans-serif;
+  color: white;
+  position: relative;
+  background: var(--base-color);
+  width: 7.7rem;
+  height: 2.5rem;
+  text-align: center;
+  margin-left: 1.875rem;
+}
+
+.line-up::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: var(--base-color-purple);
+  position: absolute;
+  top: 15%;
+  left: 6%;
+  z-index: -1;
+}
+
+.image-line-up {
+  display: block;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5rem;
+}
+
+.espaco-back {
+  padding-top: 2rem;
+}
+
+.line-up-background {
+  background: var(--dark-base-color);
+  padding-top: 0.2rem;
+  padding-bottom: 1.5rem;
+}
+
+.line-up-text {
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+  text-align: center;
+}
+
+.line-up-text p {
+  font: 600 1rem 'Poppins', sans-serif;
+  color: var(--titulo-color);
+  font-size: 130%;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.line-up-text span {
+  color: var(--base-color-purple);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.line-up-text h2 {
+  margin-bottom: 1rem;
+  border-bottom: solid;
+  font: 700 1.8rem 'Poppins', sans-serif;
+  color: var(--base-color-yellow);
+}
+/*----- BOTÃO WHATSAPP -----*/
+
+.button-one {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.button-one a {
+  font: 400 1.5rem 'DM Sans', sans-serif;
+  color: var(--titulo-color);
+  border: solid;
+  border-width: 0.1rem;
+  border-radius: 0.25rem;
+  padding: 0.5rem 2rem;
+}
+
+.comprar:hover {
+  background: var(--base-color-purple);
+  transition: background 0.4s;
+}
+/*---17/12---*/
+#dayone {
+  overflow: hidden;
+}
+
+.container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-bottom: 5rem;
+}
+
+#dayone .title {
+  text-align: center;
+  font-size: 250%;
+  margin-bottom: 2rem;
+}
+
+#dayone .imagem {
+  position: relative;
+}
+
+#dayone .imagem::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: var(--base-color-purple);
+  position: absolute;
+  top: -7%;
+  right: 10%;
+  z-index: -1;
+}
+.espaco {
+  padding-top: 1rem;
+}
+
+/*---line up---*/
+
+.fundo {
+  background: var(--dark-base-color);
+  border-radius: 0.5rem;
+}
+
+.subtitle {
+  padding: 1rem 1rem;
+}
+.subline {
+  line-height: 2rem;
+  height: auto;
+  width: 7.3rem;
+  border-right: solid;
+  border-bottom: solid;
+  border-color: var(--base-color-purple);
+}
+
+.descrition {
+  margin-top: 0.8rem;
+  font-size: 140%;
+  color: rgb(226, 226, 226);
+}
+
+.endereco-one {
+  display: flex;
+}
+
+.endereco-two {
+  color: rgb(66, 66, 66);
+}
+
+/*---ingressos---*/
+.subtickets {
+  line-height: 2rem;
+  height: auto;
+  width: 11.1rem;
+  border-right: solid;
+  border-bottom: solid;
+  border-color: var(--base-color-purple);
+}
+
+.ingressos {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ingressos p {
+  padding-right: 1rem;
+  font-size: 140%;
+}
+
+.flex-pista {
+  display: flex;
+}
+
+.flex-premium {
+  display: flex;
+}
+
+.flex-open {
+  display: flex;
+}
+
+.yellow {
+  color: var(--base-color-yellow);
+}
+
+/*---classificação---*/
+.classificacao {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.doze p {
+  color: var(--titulo-color);
+  padding-left: 0.5rem;
+}
+
+/*---botão carrinho---*/
+
+.pista-list,
+.premium-list,
+.open-list {
+  margin-top: 1.7rem;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.8rem;
+  padding-top: 1.5rem;
+  border-bottom: solid 1px;
+  border-color: rgb(66, 66, 66);
+}
+
+.lista-compra {
+  margin-right: 1.5rem;
+  margin-left: 1rem;
+}
+
+.lista-compra p {
+  font-size: 150%;
+  color: var(--titulo-color);
+  padding-left: 1rem;
+}
+
+/*--- SOBRE NOS ---*/
+
+.titulo {
+  font: 700 1.875rem 'Poppins', sans-serif;
+  color: white;
+  position: relative;
+  background: var(--base-color);
+  width: 12rem;
+  height: 2.5rem;
+  text-align: center;
+  margin-left: 1.875rem;
+}
+
+.titulo::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: var(--base-color-purple);
+  position: absolute;
+  top: 12%;
+  left: 4%;
+  z-index: -1;
+}
+
+.imagem-sn img {
+  display: block;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.sobre-nos-text {
+  padding: 1rem;
+  border-top: solid;
+  border-color: var(--base-color-purple);
+}
+.sobre-nos-text p {
+  margin-left: 2rem;
+  margin-bottom: 1.3rem;
+  text-align: justify;
+  font-size: 115%;
+}
+
+.sobre-nos-text span {
+  color: var(--base-color-yellow);
+}
+
+/*------ CONTACT ------*/
+
+#contatos {
+  margin-left: 2rem;
+}
+
+#contatos .text-contatos p {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: var(--text-color);
+}
+
+#contatos li,
+a {
+  margin-bottom: 0.5rem;
+  color: var(--titulo-color);
+  text-decoration: none;
+  font: 400 1rem 'Poppins', sans-serif;
+}
+
+.links {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.links li {
+  padding-top: 1rem;
+}
+
+.button-whatsapp {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.button-whatsapp a {
+  font: 600 1.2rem 'Poppins', sans-serif;
+  color: var(--titulo-color);
+  background: green;
+  border-radius: 0.25rem;
+  padding: 0.8rem 1rem;
+  transition: background 0.4s;
+  border: solid white 1px;
+}
+
+.zap:hover {
+  background: rgb(53, 194, 53);
+}
+
+/*
+#contatos .button i,
+#contatos ul li i {
+  font-size: 1.5rem;
+  margin-right: 0.625rem;
+}
+
+#contatos ul.grid {
+  gap: 2rem;
+}
+
+#contatos ul li {
+  display: flex;
+  align-items: center;
+}
+
+#contatos ul li i {
+  color: var(--base-color);
+}
+
+/*--- FOOTER ---*/
+#footer {
+  background: var(--dark-base-color);
+  border-top: solid var(--text-color) 1px;
+  padding-bottom: 0;
+}
+
+#footer .logo-alt img {
+  display: relative;
+  padding-bottom: 1rem;
+  height: 5rem;
+}
+
+#footer .brand {
+  margin-left: 2rem;
+}
+
+footer .brand p {
+  color: var(--text-color);
+  margin-bottom: 0.75rem;
+}
+
+footer i {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+}
+
+footer .social a {
+  margin-right: 2rem;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+footer .social a:hover {
+  transform: translateY(-8px);
+}
